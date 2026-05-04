@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se • Suprir</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cadastro-container">
+    <img src="SUPRIR.jpeg" alt="Logo Suprir" class="logo">
+
+    <form id="formCadastro" class="cadastro-form" onclick="limparErros()">
+
+        <div class="floating">
+            <input minlength="5" id="usuario" type="text"  name="usuario" required>
+            <label>Usuário:</label>
+           
+        </div>
+
+        <div class="floating">
+            <input id="email" type="email"  name="email" required>
+            <label>E-mail:</label>
+          
+        </div>
+
+        <div class="floating">
+            <input minlength="9" id="senha" type="password"  name="senha" required>
+            <img src="ocultar.png" id="icon" onclick="verOcultarSenha()">
+            <label>Senha:</label>
+           
+        </div>
+
+        <div class="floating">
+            <input id="confirmarSenha" type="password"  name="confirmarSenha" required>
+            <img src="ocultar.png" id="icone" onclick="verOcultarSenhaDois()">
+            <label>Confirmar senha:</label>
+            <small class="erro"></small>
+        </div>
+
+        <button type="submit">Cadastre-se</button>
+
+        <p>
+            Já tem uma conta?
+            <a href="http://127.0.0.1:5500/loginSup/INDEX.html">Conecte-se</a>
+        </p>
+
+    </form>
+</div>
+
+<script src="Suprir.js"></script>
+</body>
+</html>
